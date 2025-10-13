@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Golden Bakery-HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+<main id="entire_home">
+     <aside id="nav_one">
+    <img src="./assets/bakery logo.jpeg" alt="logo">
+        <h1>Golden Bakery</h1>
+    </aside>
+    <aside id="nav_two">
+        <a href="http://127.0.0.1:5500/index.html "  class="active">Home</a>
+        <a href="http://127.0.0.1:5500/about.html">About</a>
+        <a href="http://127.0.0.1:5500/menu.html">Menu</a>
+        <a href=" http://127.0.0.1:5500/contact.html">Contact</a>
+    </aside>
+    <aside id="nav_three">
+    <i class="ri-shopping-cart-2-line"></i>
+    <div id="cart_quantity">0</div>
+    <p id="cart_price">₹0.00</p>
+    </aside>
+</div>
+</main>
+<header>
+    <div class="header_text">
+  <h2>Welcome to Golden Bakery!</h2>
+  <p>Freshly baked happiness every day.</p>
+</div>
+</header>
+<article id="bakery_description">
+    <h1>The Best Bakery In world </h1>
+    <p>We provide freshely baked breads and pastries </p>
+    <button >Shop Now</button>
+</article>
+<section id="bakery_items">
+    <h2>Enjoy our Delicious Bread</h2>
+    <article id="items_container">
+        <div class="items">
+            <img src="./assets/item1.jfif" alt="">
+            <p>sourdough bread</p>
+        </div>
+         <div class="items">
+            <img src="./assets/item2.jpg" alt="">
+            <p>croissant</p>
+        </div>
+         <div class="items">
+            <img src="./assets/item3.jpg" alt="">
+            <p>fruit tart</p>
+        </div>
+         <div class="items">
+            <img src="./assets/item4.jpeg" alt="">
+            <p>pizza</p>
+        </div>
+    </article>
+</section>
+<aside id="sidebar">
+  <section id="sidebar_one">
+    <h2>BAKERY INVOICE</h2>
+    <div class="sidebar-info">
+      <div>
+        <strong>Invoice #</strong> <span id="invoice_no">0000007</span>
+      </div>
+      <div>
+        <strong>Invoice date</strong> <span id="invoice_date">10-02-2025</span>
+      </div>
+      <div>
+        <strong>Due date</strong> <span id="due_date">10-16-2025</span>
+      </div>
+    </div>
+    <hr>
+    <div class="sidebar-billto">
+      <strong>Bill To</strong>
+      <div>Customer Name</div>
+      <div>123 Customer St,<br>Customer Town, ST 12345</div>
+    </div>
+  </section>
+  <section id="sidebar_items">
+    <!-- Cart items will be injected here by JS -->
+  </section>
+  <div class="sidebar-totals">
+    <div>Subtotal <span id="sidebar_subtotal">$0.00</span></div>
+    <div>Sales Tax (5%) <span id="sidebar_tax">$0.00</span></div>
+    <div class="sidebar-total"><strong>Total (USD)</strong> <span id="sidebar_total">$0.00</span></div>
+  </div>
+  <hr>
+  <div class="sidebar-terms">
+    <strong>Terms and Conditions</strong>
+    <div>Payment is due in 14 days</div>
+    <div>Please make checks payable to: Your Company Inc.</div>
+  </div>
+  <button id="buyBtn">Buy Now</button>
+</aside>
+<footer id="index_footer">
+    <h1 class="blink-visit-bakery">Visit Our Bakery</h1>
+    <p>3-22-87 near lbNagar Bustop,Hyderabad</p>
+    <p>open from 10:00am-11:00pm</p>
+    <button id="index_contact">contact us</button>
+</footer>
+ 
+</body>
+</html>

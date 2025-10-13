@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Golden Bakery-HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body id="menu_body">
+<main id="entire_home">
+     <aside id="nav_one">
+    <img src="./assets/bakery logo.jpeg" alt="logo">
+        <h1>Golden Bakery</h1>
+    </aside>
+    <aside id="nav_two">
+        <a href="http://127.0.0.1:5500/index.html ">Home</a>
+        <a href="http://127.0.0.1:5500/about.html">About</a>
+        <a href="http://127.0.0.1:5500/menu.html"  class="active">Menu</a>
+        <a href=" http://127.0.0.1:5500/contact.html">Contact</a>
+    </aside>
+    <aside id="nav_three">
+    <i class="ri-shopping-cart-2-line" id="sidebar_icon"></i>
+    <div id="cart_quantity">0</div>
+    <p id="cart_price">₹0.00</p>
+    </aside>
+</div>
+</main>
+<aside id="sidebar">
+  <section id="sidebar_one">
+    <h1>Cart</h1>
+    <p id="close_sidebar" style="color: red;">X</p>
+  </section>
+  <hr />
+  <section id="sidebar_items"></section>
+  <div class="sidebar-totals">
+    <div>Subtotal 
+    <span id="sidebar_subtotal">$0.00</span>
+    </div>
+    <div>Sales Tax (5%)
+      <span id="sidebar_tax">$0.00</span>
+      </div>
+    <div class="sidebar-total">
+      <strong>Total</strong> 
+      <span id="sidebar_total">$0.00</span>
+    </div>
+  </div>
+</aside>
+
+    <main id="menu_data">
+      <section id="menu_filter">
+      <h1>Our Menu</h1>
+      <div id="filter_btns">
+        <button class="active" onclick="filterItems('all')">All</button>
+        <button onclick="filterItems('bread')">Breads</button>
+        <button onclick="filterItems('cake')">Cakes</button>
+        <button onclick="filterItems('croissant')">Croissant</button>
+        <button onclick="filterItems('fruitTart')">Fruit Tart</button>
+      </div>
+    </section>
+    <section id="menu_items">
+      <div class="card bread">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/bread1.jpg" alt="bread1" />
+          </aside>
+          <aside class="card_info">
+            <h1>Brown Bread</h1>
+            <p>₹50.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card bread">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/bread2.webp" alt="bread2" />
+          </aside>
+          <aside class="card_info">
+            <h1>Baguette</h1>
+            <p>₹60.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card bread">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/bread3.jpg" alt="bread3" />
+          </aside>
+          <aside class="card_info">
+            <h1>Veg Patties</h1>
+            <p>₹55.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card bread">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/bread4.jpeg" alt="bread4" />
+          </aside>
+          <aside class="card_info">
+            <h1>Tie Bread</h1>
+            <p>₹65.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card cake">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/cake1.jpg" alt="cake1" />
+          </aside>
+          <aside class="card_info">
+            <h1>Chocolate Cake</h1>
+            <p>₹70.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card cake">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/cake2.webp" alt="cake2" />
+          </aside>
+          <aside class="card_info">
+            <h1>Red Velvet Cake</h1>
+            <p>₹80.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card cake">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/cake3.jpeg" alt="cake3" />
+          </aside>
+          <aside class="card_info">
+            <h1>Butterscotch-Cake</h1>
+            <p>₹70.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card cake">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/cake4.jpeg" alt="cake4" />
+          </aside>
+          <aside class="card_info">
+            <h1>Red-Sponge Cake</h1>
+            <p>₹80.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card croissant">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/crossiant1.webp" alt="crossaint1" />
+          </aside>
+          <aside class="card_info">
+            <h1>Pistachio Crossaint</h1>
+            <p>₹200.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card croissant">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/crossiant2.jpg" alt="crossaint2" />
+          </aside>
+          <aside class="card_info">
+            <h1>Red Velvet Crossaint</h1>
+            <p>₹150.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card croissant">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/crossiant3.jpeg" alt="crossaint3" />
+          </aside>
+          <aside class="card_info">
+            <h1>Chocolate Crossaint</h1>
+            <p>₹170.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card fruitTart">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/fruitTart1.jpg" alt="fruit_tart1" />
+          </aside>
+          <aside class="card_info">
+            <h1>CreamFruit Tart</h1>
+            <p>₹200.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      <div class="card fruitTart">
+        <article class="card_one">
+          <aside class="card_img">
+            <img src="./assets/fruitTart2.png" alt="fruit_tart2" />
+          </aside>
+          <aside class="card_info">
+            <h1>Mixed-Fruit Tart</h1>
+            <p>₹250.00</p>
+          </aside>
+        </article>
+        <article class="card_two">
+          <aside class="card_quantity">
+            <div class="minus">-</div>
+            <div class="quantity">0</div>
+            <div class="plus">+</div>
+          </aside>
+          <aside class="addtocart">
+            <button>Add To Cart</button>
+          </aside>
+        </article>
+      </div>
+      
+    </section>
+  
+    </main>
+    
+    <script src="./menu.js"></script>
+</body>
+</html>
+
